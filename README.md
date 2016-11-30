@@ -42,14 +42,20 @@ vs_config_destory(config);
 
 Functions
 =========
-# Load config from file
+## Load config from file
+```
 vs_config *vs_load_config(const char *file)
+```
 
-# Destory vs_config instance
+## Destory vs_config instance
+```
 void vs_config_destory(vs_config *config)
+```
 
-# Get value of specified key
+## Get value of specified key
+```
 char *vs_config_get(vs_config *config, const char *key)
 int vs_config_get_bool(vs_config *config, const char *key)
 int vs_config_get_int(vs_config *config, const char *key)
 double vs_config_get_double(vs_config *config, const char *key)
+```
